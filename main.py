@@ -8,7 +8,7 @@ updater = Updater(config.BOT_TOKEN)
 
 def start(update: Update, context: CallbackContext) -> None:
     update.message.reply_text('Salom!')
-
+    
 
 dispatcher = updater.dispatcher
 dispatcher.add_handler(CommandHandler('start', start))

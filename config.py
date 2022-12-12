@@ -10,4 +10,4 @@ BOT_TOKEN = env.str("BOT_TOKEN")  # Забираем значение типа s
 ADMINS = env.list("ADMINS")  # Тут у нас будет список из админов
 
 DATABASE = env.str("DATABASE")
-message_chat_id = 5241365514
+MSG_CHAT_ID = env.int("MSG_CHAT_ID")
