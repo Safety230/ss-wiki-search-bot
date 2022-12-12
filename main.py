@@ -2,9 +2,9 @@
 from telegram.update import Update
 from telegram.ext import Updater, CommandHandler, CallbackContext
 
+import config
 
-
-updater = Updater(token='5241365514:AAHO0jN87V92rLAQvtQEvDxA5vBKFAAOfaA')
+updater = Updater(config.BOT_TOKEN)
 
 def start(update: Update, context: CallbackContext) -> None:
     update.message.reply_text('Salom!')
